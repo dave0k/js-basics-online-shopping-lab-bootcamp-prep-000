@@ -12,7 +12,7 @@ function setCart(c) {
 var itemObject = {}
 
 function addToCart(item) {
- itemObject += Object.assign(itemObject, { itemName: `${item}`, itemPrice: `${Math.floor(Math.random() * 100) + 1}` })
+ itemObject = Object.assign(itemObject, { itemName: `${item}`, itemPrice: `${Math.floor(Math.random() * 100) + 1}` })
  return `${item} has been added to your cart.`
 }
 
